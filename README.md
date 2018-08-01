@@ -52,7 +52,7 @@ Write out the AJAX call that will grab the data and `console.log` the list of ea
 
 #### Part 2. Add the title data to the page
 
-**Add each *title* to the page**: Loop over your JSON response object, and each `title` to the page using jQuery. Aim to put each title inside the `<div id="info">` section of the page. For example:
+**Add each *title* to the page**: Loop over your JSON response object, and each `title` to the page. Aim to put each title inside the `<div id="info">` section of the page. For example:
 
 ```html
 <div id="info">
@@ -83,4 +83,3 @@ Extend your template:
 - Parse the title to only include the location, E.g. Instead of "M 4.2 - 1km ESE of Fontana, California", it should just say "Fontana, California."
 - Create a visual indicator of the magnitude of a quake. For instance, maybe a 4.0 is indicated by a "yellow" dot, a 5.0 by an "orange" dot, and anything larger is "red".
 - Create a button that allows us to switch the map from having a 'weekly' view to a 'monthly' view of all quakes. Hint: look through the USGS website to see available endpoints.
-
