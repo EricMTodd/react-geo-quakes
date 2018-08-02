@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import QuakesList from "./QuakesList";
+import MapContainer from "./MapContainer";
 
 class App extends Component {
   constructor() {
@@ -21,8 +22,6 @@ class App extends Component {
     }
   }
 
-
-
   componentDidMount() {
     this.getQuakes().then((data) => {
       console.log("data:", data);
@@ -35,6 +34,7 @@ class App extends Component {
       <div className="app">
         <div className="mapContainer">
           ...put Map Component here...
+          <MapContainer />
         </div>
         <div className="quakeContainer">
           <h1>Earthquakes from the past week: </h1>
